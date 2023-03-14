@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <style>
+  *
+  {
+    padding:0px;
+    margin:0px;
+  }
+  #header{
+    color: transparent;
+    background-image:url(./left.png),url(./right.png),url(./traveller.jpg);
+    background-repeat: no-repeat;
+    background-size: 60% 400px,80% 400px,100%;
+    background-position: bottom left,bottom right,0px 0px;
+    transition: background-position 2s,color 3s;
+    height:800px;
+    width:100%;
+    background-size:100%;
+    }
+    #header:hover
+    {
+        color:black;
+        background-position: -250px 50px,450px 50px,100px -850px;
+        cursor:pointer;
+    }
+    #heading
+    {
+    font-size: 120px;
+    padding-left: 25px;
+    padding-top: 150px; 
+    }
+</style>
+</head>
+<body>
+    <div id="header">
+        <div id="heading"></div>
+    </div>
+</body>
+</html>
